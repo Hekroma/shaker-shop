@@ -141,9 +141,22 @@ body {
   border-right: 1px solid #1e91f7;
   border-bottom: 1px solid #1e91f7;
   padding-top: 32px;
+  text-decoration: none;
 }
 
-.slide-box__title {
+.slide-box__link {
+  cursor: pointer;
+}
+
+.slide-box__link:hover {
+  text-decoration: none;
+}
+
+.slide-box__link:visited {
+  text-decoration: none;
+}
+
+.slide-box__link_title {
   color: #315479;
   font-size: 20px;
   font-weight: 800;
@@ -153,11 +166,11 @@ body {
   text-align: center;
 }
 
-.slide-box__img {
+.slide-box__link_img {
   margin: 0 auto;
 }
 
-.slide-box__img_hercules {
+.slide-box__link_img-hercules {
   margin-top: 21px;
   margin-bottom: 25px;
 }

@@ -5,3 +5,5 @@ $('.slider').slick({
     nextArrow:"<img class='a-right control-c next slick-next' src='../img/slider/next-arrow.png'>"
   }
 )
+
+	$("a#single_image").fancybox();
