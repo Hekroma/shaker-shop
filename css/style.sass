@@ -1,6 +1,6 @@
 body
     font-family: 'Open Sans', sans-serif
-.header
+.blueline
     background-color: #0e88f3
 .logo
     color: #ffffff
@@ -45,19 +45,6 @@ body
         font-weight: 400
         line-height: 24px
         letter-spacing: -0.6px
-    &__btn
-        width: 231px
-        height: 60px
-        margin: 36px 0 16px 0
-        background-color: #9addfc
-        border: 0
-        border-radius: 5px
-        color: #345477
-        font-size: 17px
-        font-weight: 600
-        line-height: 24px
-        text-transform: uppercase
-        letter-spacing: -0.68px
     &__review
         color: #95c9fb
         font-size: 14px
@@ -68,6 +55,20 @@ body
         margin-left: 45px
         &_play-icon
             margin-left: 6px
+.btn
+    margin: 36px 0 16px 0
+    width: 231px
+    height: 60px
+    background-color: #9addfc
+    border: 0
+    border-radius: 5px
+    color: #345477
+    font-size: 17px
+    font-weight: 600
+    line-height: 24px
+    text-transform: uppercase
+    letter-spacing: -0.68px 
+        
 .topbox__img
     margin-top: 13px   
 .brand
@@ -90,7 +91,26 @@ body
 // **************slider***********    
 .slider
     height: 298px
-//***********slider****************
+    margin-bottom: 64px
+.slide-box
+    border-right: 1px solid #1e91f7
+    border-bottom: 1px solid #1e91f7
+    padding-top: 32px
+    &__title
+        color: #315479
+        font-size: 20px
+        font-weight: 800
+        line-height: 27px
+        text-transform: uppercase
+        letter-spacing: -1.29px
+        text-align: center
+    &__img
+        margin: 0 auto
+        &_hercules
+            margin-top: 21px
+            margin-bottom: 25px
+
+
 
 .title
     width: 560px
@@ -113,14 +133,14 @@ body
         width: 459px
         &-first
             margin-top: 90px
-        &-title
+        &_title
             color: #315479
             font-size: 25px
             letter-spacing: -1px
             line-height: 31px
             text-align: left
             margin-bottom: 40px
-        &-text
+        &_text
             color: #677482
             font-size: 22px
             font-weight: 400
@@ -129,55 +149,170 @@ body
             margin-top: 121px
 .title-clientSay
     font-size: 36px
-.comunity
+.community
     display: inline-block
-    margin-right: 28px
-    width: 31%
+    width: 33%
     vertical-align: top
+    margin-bottom: 100px
     &:last-child
         margin-right: 0px
     &__speech
-        background-color: #158af4
-        display: flex
-        padding: 45px 45px 35px 24px
-        border-radius: 5px
-        margin-bottom: 24px
-        position: fixed
-        bottom: 0
-        & :after 
-            content: ""
-            position: absolute
-            bottom: -14px
-            right: 20px
-            border-style: solid
-            border-width: 15px 15px 0
-            border-color: #e67e22 transparent
-            display: block
-            width: 0
-            z-index: 1
-        &-quotes
-            margin-top: 5px
-            color: #116ace
-            font-family: Georgia
-            font-size: 75px
-            font-weight: 400
-            line-height: 42.73px
-            letter-spacing: -3.35px
-        &-text 
+        &_blockquote
+            margin: 10px 10px 0
+            background: #158af4
+            padding: 35px 28px 28px 57px
+            position: relative
+            border: none
+            border-radius: 8px
             color: #ffffff
             font-size: 17px
             font-weight: 400
             line-height: 25px
             letter-spacing: -0.76px
-    &__autor 
-        margin-left: 7px
+            &:before 
+                content: "\201C"
+                position: absolute
+                font-family: "Georgia"
+                font-size: 75px
+                line-height: 1
+                color: #116ace
+                font-style: normal
+                top: 22px
+                left: 18px 
+            &_corner 
+                width: 0
+                height: 0
+                border-left: 10px solid transparent
+                border-right: 22px solid transparent
+                border-top: 13px solid #158af4
+                margin: 0 0 0 40px
+
+        &_autor 
+            margin-left: 26px
+            margin-top: 5px
+            font-weight: 400
+            color: #315479
+            font-size: 16px
+            letter-spacing: -0.64px
+            line-height: 21px
+            &_shop
+                color: #677482
+                font-size: 14px
+                letter-spacing: -0.56px
+                line-height: 23px
+.downbox
+    padding-top: 63px
+    padding-bottom: 80px
+    &__title
+        margin: 0 auto
+        width: 676px
+        color: #ffffff
+        font-size: 32px
         font-weight: 400
-        color: #315479
+        line-height: 43px
+        letter-spacing: -1.28px
+        text-align: center
+    &__subtitle
+        text-align: center
+        margin-top: 25px
+        color: #d2e7fb
         font-size: 16px
+        font-weight: 400
+        line-height: 25px
         letter-spacing: -0.64px
-        line-height: 21px
-        &-shop
-            color: #677482
-            font-size: 14px
-            letter-spacing: -0.56px
-            line-height: 23px
+    &__btn
+        display: flex
+        justify-content: center
+.footer-topbox
+    margin-top: 50px
+    margin-bottom: 100px
+    padding-top: 15px
+    display: flex
+    padding-left: 50px
+    &__info
+        width: 25%
+        margin-right: 60px
+        &_text 
+            width: 300px
+            color: #323232
+            font-size: 15px
+            font-weight: 400
+            line-height: 22px
+            letter-spacing: -0.6px
+    &__contact
+        width: 22%
+        margin-right: 76px
+        &_text 
+            width: 250px
+            color: #323232
+            font-size: 15px
+            font-weight: 400
+            line-height: 22px
+            letter-spacing: -0.6px
+        &_mail  
+            width: 250px
+            color: #3974ca
+            font-size: 15px
+            font-weight: 400
+            line-height: 22px
+            letter-spacing: -0.6px
+            cursor: pointer
+    &__social
+        width: 15%
+    &_title
+        color: #3974ca
+        font-size: 12px
+        font-weight: 700
+        line-height: 23px
+        text-transform: uppercase
+        letter-spacing: -0.5px
+        margin-bottom: 25px
+.navlist
+    position: relative
+    &__item
+        margin: 0
+        padding: 0
+        list-style: none
+        position: absolute
+        top: 0
+        height: 19px
+        display: block
+        &_fb
+            left: 0px
+            width: 11px
+            background: url('../img/social-sprite.png') 0 0
+        &_linkedin
+            left: 23px
+            width: 18px
+            background: url(../img/social-sprite.png) -27px 0
+        &_youtobe
+            left: 50px
+            width: 21px
+            background: url(../img/social-sprite.png) -60px 0
+        &_twitter
+            left: 80px
+            width: 27px
+            background: url(../img/social-sprite.png) -95px 0
+        &_instagram
+            left: 100px
+            width: 27px
+            background: url(../img/social-sprite.png) -121px 0
+    &__link
+        display: block
+        height: 19px 
+        cursor: pointer  
+.footer-bottombox
+    margin-left: 50px
+    margin-bottom: 65px
+    background-image: url(../img/like-share.png)
+    background-repeat: no-repeat
+    padding-left: 140px
+    color: #323232
+    font-size: 12px
+    font-weight: 400
+    line-height: 22px
+    letter-spacing: -0.5px
+
+
+        
+        
