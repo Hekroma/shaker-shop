@@ -6,4 +6,13 @@ $('.slider').slick({
   }
 )
 
-	$("a#single_image").fancybox();
+$("a#single_image").fancybox();
+
+menu.onclick = function myFunction(){
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+      x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
